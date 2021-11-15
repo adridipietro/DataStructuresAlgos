@@ -24,3 +24,5 @@ function isPalindrome(number) {
 
 console.log(isPalindrome(212)) // true
 console.log(isPalindrome(10)) // false
+console.log(isPalindrome(10000001)) // true
+console.log(isPalindrome(2000000033)) // false
