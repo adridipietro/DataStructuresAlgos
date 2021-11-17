@@ -33,6 +33,11 @@ Example:
 
 Hashes are not ordered, so we do not have to shift indices. 
 
+Data is submitted randomly; the addresses are in order; not the key-value pairs.
+
+Maps, which are a type of hashes, maintain order.
+
+Sets, which are a type of hashes, only store the keys; not the key AND values. 
 
 ## Hash Collisions
 
@@ -45,5 +50,6 @@ Hash collisions slow down are ability to access data.
 Hash collisions => linked lists
 
 BIG O O(n/k) where k = size of hash table
+
 
 
