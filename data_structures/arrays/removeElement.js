@@ -13,13 +13,15 @@ var removeElement = function(array, val) {
         let index = array.indexOf(item)
         // if the array item's value is equal to 'val'
         if (item === val){
-          //console.log(item)
+          //remove the item at its index
           array.splice(index, 1)
+          // push an underscore to the end of the array
           array.push('_')
         }
 
     
       }
+      // return the modified array
       return array
     
 }
