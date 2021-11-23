@@ -21,3 +21,25 @@ function plusOne(digits){
     // converting string back to array
     return newString.split("")
 }
+
+function plusOneAgain(digits){
+    // iterate through digits backwards
+    // i = digit's length - 1; while i is greater or equal to zero; decrement by 1
+    for(let i = digits.length - 1; i >= 0; i--){
+        
+        // inrement each array item of digits by 1
+        digits[i]++
+        // if the array item's value is more than 9, change the value to zero
+        if(digits[i] > 9){
+            digits[i] = 0
+        }else{
+            // if the current digit is less than 9, return the array
+            return digits
+        }
+    }
+    // add 1 to beginning of array
+    digits.unshift(1)
+    // return the results
+    return digits
+
+}
