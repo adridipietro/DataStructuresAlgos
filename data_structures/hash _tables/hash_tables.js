@@ -72,7 +72,13 @@ class HashTable {
 
     // loop through all the keys of the hash table + return them all
     keys(){
-
+        const keysArray = []
+        for (let i = 0; i < this.data.length; i++){
+            if (this.data[i]){
+                keysArray.push(this.data[i][0][0])
+            }
+        }
+        return keysArray
     }
 }
 
@@ -81,6 +87,7 @@ const myHashTable = new HashTable(50)
 
 myHashTable.set('grapes', 100)
 myHashTable.set('apples', 20)
+myHashTable.set('oranges', 1)
 myHashTable.get('grapes')
 
 
@@ -92,3 +99,4 @@ myHashTable.get('grapes')
 // data lives in "buckets"
 
 // hash tables can have 0(n) if the hash table has linked lists within
+// iteration in hash tables can take a long time because it loops through the entire hashTable size
