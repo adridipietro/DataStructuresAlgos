@@ -49,11 +49,40 @@ class HashTable {
             console.log(this.data)
         } 
         this.data[address].push([key, value])
+        return this.data
+    } // 0(1)
+
+    // get method
+    // trying to return only the value of the key
+    get(key){
+        let address = this._hash(key)
+        const currentBucket = this.data[address]
+        if (currentBucket){
+            for (let i = 0; i < currentBucket.length; i++){
+                // grab the first array + grab the first item within the array
+                // if the first array item of the first array === key then do something
+                if (currentBucket[i][0] === key){
+                    // return the value of the key
+                    return currentBucket[i][1]
+                }
+            }
+        } // 0(1)
+        return undefined
+    }
+
+    // loop through all the keys of the hash table + return them all
+    keys(){
+
     }
 }
 
 const myHashTable = new HashTable(50)
 // 50 reps the amount of space we have to store different hashes/addresses
+
+myHashTable.set('grapes', 100)
+myHashTable.set('apples', 20)
+myHashTable.get('grapes')
+
 
 
 
@@ -61,3 +90,5 @@ const myHashTable = new HashTable(50)
 // _hash => the underscore just tells us that this function or method is "private" -- its scope is only within the class function
 // given the same input, hash tables will always output the same data
 // data lives in "buckets"
+
+// hash tables can have 0(n) if the hash table has linked lists within
