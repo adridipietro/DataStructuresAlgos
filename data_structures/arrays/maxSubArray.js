@@ -9,6 +9,8 @@ var maxSubArray = function(nums) {
         return nums[0]
     }
     // declare + assign constants 
+    // The Number.MIN_SAFE_INTEGER constant represents the minimum safe integer in JavaScript 
+    // In JavaScript, MIN_SAFE_INTEGER is a static property of the Number object that is used to return the minimum safe integer value. Because MIN_SAFE_INTEGER is a property of the Number object, it must be invoked through the object called Number.
     let maxTotal = Number.MIN_SAFE_INTEGER
     let runningTotal = 0
     
