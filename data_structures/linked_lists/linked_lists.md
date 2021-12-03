@@ -28,3 +28,15 @@ append => O(1)
 lookup => O(n)
 insert => O(n)
 delete => O(n)
+
+
+## POINTERS
+
+* a reference to another place or object (node) in memory
+* in JS, we can demonstrate pointers by referencing an already declared + assigned object. 
+
+Example: 
+    const obj1 = "Cat"
+    const obj2 = obj1
+
+* Both obj1 and obj2 point to the same location in memory. 
