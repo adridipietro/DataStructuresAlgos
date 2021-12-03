@@ -51,7 +51,18 @@ Hash collisions => linked lists
 
 BIG O O(n/k) where k = size of hash table
 
-## No Concept Of Order
+## Hash Tables Review + Summary
+
+* Fast Lookups
+* Fast Inserts
+* Flexible Keys
+* Optimize loops to O(n) -- Linear Time
+* Unordered 
+* Collisions Occur
+* Slow Iteration for Going Through Keys
+* Some O(n) Operations due to Collisions
+* Improve Time Complexity -- 
+
 
 
 
