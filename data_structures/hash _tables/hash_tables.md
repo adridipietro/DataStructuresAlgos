@@ -51,5 +51,9 @@ Hash collisions => linked lists
 
 BIG O O(n/k) where k = size of hash table
 
+## No Concept Of Order
+
+
+
 
 
