@@ -35,7 +35,7 @@ class LinkedList {
         // point tail to now the appended value (new node)
         // change value of tail to the newNode's value
         // increase the length
-        // return this new node ('this')
+        // return this linked list ('this')
         const newNode = {
             value: value,
             next: null
@@ -43,6 +43,25 @@ class LinkedList {
         // point tail to the new node
         this.tail.next = newNode
         this.tail = newNode
+        this.length++
+        return this
+    }
+
+    prepend(value){
+        // prepend => adding something to the beginning
+        // create a new node with the value
+        // need to change 'head' to point to the value
+        // point head to the previous 'head' value
+        // increase the length
+        // return this linked list ('this')
+        const newNode = {
+            value: value,
+            next: null
+        }
+        // our newNode is going to point to the first item in our linked list
+        newNode.next = this.head
+        // update the value of this.head to our newNode's value
+        this.head = newNode
         this.length++
         return this
     }
