@@ -65,6 +65,34 @@ class LinkedList {
         this.length++
         return this
     }
+
+    // print value of nodes in an array format
+    printList(){
+        // create empty array
+        const array = []
+        // set currentNode to the first item in LinkedList (the head)
+        let currentNode = this.head
+        // create a while loop; while the currentNode does not equal null do this:
+        while (currentNode !== null){
+            // push currentNode's value to the array
+            array.push(currentNode.value)
+            // and then set the currentNode to the property of next
+            currentNode = currentNode.next
+        }
+        return array
+    }
+
+    insert(index, value){
+        // insert => add value at a specified location
+        // change the next value to the adjacently right node
+        // traverse linked list to seek index
+        // shift indices?
+        // increase the length
+        // return this
+    }
 }
 
 const myLinkedList = new LinkedList(10)
+myLinkedList.append(16)
+myLinkedList.prepend(1)
+myLinkedList.insert(2, 17)
