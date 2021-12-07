@@ -28,6 +28,24 @@ class LinkedList {
         }
         this.tail = this.head
     }
+    append(value){
+        // append => add something to the end
+        // create a new node with the value
+        // need to change 'tail' to point to value I am appending
+        // point tail to now the appended value (new node)
+        // change value of tail to the newNode's value
+        // increase the length
+        // return this new node ('this')
+        const newNode = {
+            value: value,
+            next: null
+        }
+        // point tail to the new node
+        this.tail.next = newNode
+        this.tail = newNode
+        this.length++
+        return this
+    }
 }
 
 const myLinkedList = new LinkedList(10)
