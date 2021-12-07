@@ -82,6 +82,7 @@ class LinkedList {
         return array
     }
 
+    // O(n)
     insert(index, value){
         // insert => add value at a specified location
         // change the next value to the adjacently right node
@@ -112,6 +113,8 @@ class LinkedList {
         this.length++
     }
 
+    // traverse also means "lookup"
+    // O(n)
     traverseToIndex(index){
         let counter = 0
         let currentNode = this.head
@@ -124,6 +127,20 @@ class LinkedList {
         }
         return currentNode
 
+    }
+    // O(n)
+    delete(index){
+        // check params
+        // traverse through list to find node at that index
+        // remove the value + the pointer
+        // readjust pointers
+        // decrement length
+        // return this
+        const leader = this.traverseToIndex(index - 1)
+        const unwantedNode = leader.next
+        leader.next = unwantedNode.next
+        this.length--
+        return this
     }
 }
 
