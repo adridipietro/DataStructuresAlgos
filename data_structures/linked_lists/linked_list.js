@@ -89,6 +89,41 @@ class LinkedList {
         // shift indices?
         // increase the length
         // return this
+
+        // checking params
+        // if the index is greater than or equal to the list's length; just add it to the end of the list
+        if (index >= this.length){
+            return this.append(value)
+        }
+
+        const newNode = {
+            value: value,
+            next: null
+        }
+
+        // find the first node that the newNode will be adjacently right to
+        const leader = this.traverseToIndex(index - 1)
+        // save the reference to the pointer of the next node
+        const holdingPointer = leader.next
+        // update the pointer to the newNode
+        leader.next = newNode
+        // refer back to the saved reference and update the newNode's next to this node
+        newNode.next = holdingPointer
+        this.length++
+    }
+
+    traverseToIndex(index){
+        let counter = 0
+        let currentNode = this.head
+        // keep traversing until the counter is equal to the index
+        while (counter !== index){
+            // keep moving the currentNode to the right
+            currentNode = currentNode.next
+            // increment the counter
+            counter++
+        }
+        return currentNode
+
     }
 }
 
