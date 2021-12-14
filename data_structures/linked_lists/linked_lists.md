@@ -40,3 +40,17 @@ Example:
     const obj2 = obj1
 
 * Both obj1 and obj2 point to the same location in memory. 
+
+
+## Pros + Cons
+
+Pros
+* fast insertion
+* fast deletion
+* ordered
+* flexible size
+
+Cons
+* slow lookup
+* more memory
+* double linked lists => EXTRA memory
