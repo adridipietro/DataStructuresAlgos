@@ -6,7 +6,7 @@
 
 // Example =>   10-->5-->16
 // declaring + assigning object with some properties
-let myLinkedList = {
+/* let myLinkedList = {
     head: {
         value: 10,
         next: {
@@ -17,7 +17,7 @@ let myLinkedList = {
             }
         }
     }
-}
+} */
 
 class LinkedList {
     // instantiate new LinkedList with a value (to rep. the Head)
@@ -129,7 +129,7 @@ class LinkedList {
 
     }
     // O(n)
-    delete(index){
+    remove(index){
         // check params
         // traverse through list to find node at that index
         // remove the value + the pointer
@@ -141,6 +141,22 @@ class LinkedList {
         leader.next = unwantedNode.next
         this.length--
         return this
+    }
+    reverse(){
+        // if there is only one node ; if there is no 'next' for the head
+        if(!this.head.next){
+            return this.head
+        }
+        let firstNode = this.head
+        let secondNode = firstNode.next
+        while(secondNode){
+            const temporary = secondNode.next
+            secondNode.next = firstNode
+            firstNode = secondNode
+            secondNode = temporary
+            return this
+
+        }
     }
 }
 
