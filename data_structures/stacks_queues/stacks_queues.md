@@ -12,5 +12,11 @@ Stacks + queues are considered higher order data structure (more complex) -- we 
 
 ## Stacks
 
+LAST IN FIRST OUT (LIFO)
+
+* Lookup O(n)
+* Pop O(1)
+* Push O(1)
+* Peek O(1)
 
 ## Queues
