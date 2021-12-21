@@ -15,8 +15,15 @@ Stacks + queues are considered higher order data structure (more complex) -- we 
 LAST IN FIRST OUT (LIFO)
 
 * Lookup O(n)
-* Pop O(1)
-* Push O(1)
-* Peek O(1)
+* Pop O(1) -- remove last item added to stack
+* Push O(1) -- add item to stack
+* Peek O(1) -- first element of stack (last added in)
 
 ## Queues
+
+FIRST IN FIRST OUT (FIFO)
+
+* Lookup O(n)
+* Enqueue O(1) -- add to end of queue
+* Dequeue O(1) -- remove first of queue
+* Peek O(1) -- first element of queue
