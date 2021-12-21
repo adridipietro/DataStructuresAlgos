@@ -5,7 +5,7 @@ JavaScript's engine is called 'V8'. V8 has a callstack and a memory heap.
 
 JavaScript is single-threaded -- meaning it has one (1) call stack. 
 
-JavaScript is also non-blocking -- meaning JS does not wait around for things that take a lot of time ==> this is why we use asynchronous behavior. 
+JavaScript is also non-blocking -- meaning JS does not wait around for things that take a lot of time ==> this is why we use asynchronous behavior. In order to be non-blocking, JavaScript utilizes async. 
 
 Synchronous => once first thing is finished, only then can the next thing can start; and so on.
 
@@ -13,6 +13,8 @@ Asynchronous => allowing callback functions -- code is not necessarily executed 
 
 In order for JavaScript to run, we need the JavaScript Run-Time Environment and the JavaScript Enginer ('V8').
 
+
+These things allow for ASYNC behavior:
 1. Call Stack
 2. Web API
 3. Callback Queue
