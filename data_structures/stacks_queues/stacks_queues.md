@@ -19,6 +19,11 @@ LAST IN FIRST OUT (LIFO)
 * Push O(1) -- add item to stack
 * Peek O(1) -- first element of stack (last added in)
 
+Realistic example of a stack is browser 'back' and 'forward' functionality; the last page we visited is what produced when clicked 'back'.
+
+Stacks have tops and bottoms; we can build these things with either arrays or linked lists.
+
+
 ## Queues
 
 FIRST IN FIRST OUT (FIFO)
@@ -27,3 +32,7 @@ FIRST IN FIRST OUT (FIFO)
 * Enqueue O(1) -- add to end of queue
 * Dequeue O(1) -- remove first of queue
 * Peek O(1) -- first element of queue
+
+Realistic example of a queue is Uber -- the first person to request an Uber will receive the first available Uber. 
+
+We can use arrays or linked lists to implement Queues. HOWEVER, linked lists is the BETTER option. Linked Lists do NOT have indices whereas arrays do; we would have to shift the indices a lot because the first item is OUT first.  With Linked Lists we would just have to change the head with the removal of the first item. 
