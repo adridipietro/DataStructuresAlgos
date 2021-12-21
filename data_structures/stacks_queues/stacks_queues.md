@@ -36,3 +36,12 @@ FIRST IN FIRST OUT (FIFO)
 Realistic example of a queue is Uber -- the first person to request an Uber will receive the first available Uber. 
 
 We can use arrays or linked lists to implement Queues. HOWEVER, linked lists is the BETTER option. Linked Lists do NOT have indices whereas arrays do; we would have to shift the indices a lot because the first item is OUT first.  With Linked Lists we would just have to change the head with the removal of the first item. 
+
+## Review + Recap
+
+* Stacks and queues are built on other data structures such as arrays or linked lists.
+* Stacks + queues have fast insertion (front or end), fast peek.
+* Stacks + queues are ordered.
+* Slow lookup or search :(
+
+
