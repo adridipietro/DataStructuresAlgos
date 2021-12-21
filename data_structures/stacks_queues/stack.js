@@ -34,7 +34,12 @@ class Stack {
     }
     // remove the top node of the stack
     pop(){
-
+        if (!this.top){
+            return null
+        }
+        this.top = this.top.next
+        this.length--
+        return this
     }
 }
 
