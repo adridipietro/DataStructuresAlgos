@@ -19,7 +19,6 @@ class BinarySearchTree {
         // make new node the root node if tree is empty [x]
         // set left node property [x]
         // set right node property [x]
-        // increase levels (length?)
 
         /// make new node child of root node if root node exists [x]
         const newNode = new Node(value)
