@@ -29,6 +29,24 @@
 * Perfect Binary trees are predicatble and formulaic. 
 * The bottom level of nodes ALWAYS represents almost HALF of the amount of total nodes in the tree. 
 
+In a Perfect Binary Tree, you can calculate how many nodes are in a level with this formula:
+  * 2^(level) = how many nodes are in that level
+  * The levels of a tree are zero-based index. 
+  * The first level is Level 0. 
+
+EXAMPLE: 
+Level 0: 2^0 => 1 nodes
+Level 1: 2^1 => 2 nodes
+Level 2: 2^2 => 4 nodes
+
+To find the total amount of nodes:
+* 2^(amount of levels) - 1 
+
+EXAMPLE:
+4 Levels
+2^4 - 1 => 15 total nodes
+
+
 ### FULL BINARY TREE 
 
 * A Full Binary Tree is asymmetrical.
@@ -39,4 +57,12 @@
 * Lookup O(log N)
 * Insert O(log N)
 * Delete O(log N)
+
+O(log N) => 
+* it means that as the input size grows, the number of operations grows very slowly
+
+* the choice of the next element on which to perform some action is one of several possibilities, and only one will need to be chosen. We don't need to check all. 
+
+* allows us to search efficiently. 
+
 
