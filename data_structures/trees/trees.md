@@ -65,4 +65,32 @@ O(log N) =>
 
 * allows us to search efficiently. 
 
+## What is a Binary Search Tree?
+
+* great for searching, great for comparing things. 
+* preserves relationships -- parent <=> child, folder <=> file
+
+* Rules: 
+1. All child nodes in the tree to the RIGHT of the root node must be greater than the current node. 
+2. Therefore, all child nodes in the tree to the LEFT of the root node must be less than the current node. 
+3. A node can only have two (2) children. 
+
+
+* Ordered, Flexible size
+* Good performance across operations
+* Although, there are no O(1) operations
+
+
+## Balanced v. Unbalanced Binary Search Trees
+
+Balanced binary search trees are mostly symmetrical. 
+
+Unbalanced binary search trees have most or all nodes on one side. 
+
+Unbalanced binary search trees end up resembling and acting like linked lists -- so instead of lookup, traversal is needed. 
+
+So, BIG O Notation goes from O(logN) => O(n)
+
+
+
 
