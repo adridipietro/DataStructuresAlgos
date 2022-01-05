@@ -1,4 +1,4 @@
-// BINARY TREE
+// BINARY TREE NODE
 
 // a Binary Tree Node has a value property, left property and right propery
 
