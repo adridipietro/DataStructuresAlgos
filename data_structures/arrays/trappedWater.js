@@ -11,6 +11,11 @@
 // each array item has a x-axis width of 1
 
 
+
+// BRUTE FORCE ATTEMPT [O(n^2)]
+    // this attempt uses double looping which does NOT optimize time or space complexity.
+    
+
 function trappedWater(array){
     // total = amount of water represented in 1x1 spaces
     let total = 0
@@ -38,5 +43,13 @@ function trappedWater(array){
             // increment rightPointer (moving right across x-axis)
             rightPointer++
         }
+        // declare and assign waterLevel to whatever is lower and subtract the current array item
+        const waterLevel = Math.min(maxL, maxR) - height[i]
+
+        // if the waterLevel is greater than 0, add the waterLevel to the total
+        // otherwise return null (aka leave waterLevel alone)
+        waterLevel > 0 ? total += waterLevel : null
     }
+    // return the total
+    return total
 }
