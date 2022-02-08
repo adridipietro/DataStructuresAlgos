@@ -15,11 +15,19 @@ Example 2:
 
 const reversedInteger = function(x) {
     // convert int => array using .toString() and .split()
-    let numArray = x.toString().split("")
     // reverse array using .reverse()
-    let reversed = numArray.reverse()
+    // retrieve the absolute of the value x
+    let reversed = Math.abs(x).toString().split('').reverse().join('');
 
-    // if the array at the first index equals 0
+    // if the value of reversed is greater than 2^31 power return 0
+    if (reversed > 2**31) return 0
+
+    // return reversed * either positive or negative; depending on what x was originally
+    return reversed * Math.sign(x)
+
+
+    
+    /* // if the array at the first index equals 0
     // shift off the zero
     if (reversed[0] === 0){
             reversed.shift()
@@ -30,6 +38,6 @@ const reversedInteger = function(x) {
         reversed.pop()
     }
 
-    return reversed
+    return reversed */
     
 }
